@@ -40,16 +40,13 @@ export default class AnatomyExample extends Component {
         </Content>
         <Footer>
           <FooterTab>
-            <Button>
-              <Link to={"/"} component={TouchableOpacity}>
-                <Icon name="home" />
-              </Link>
-            </Button>
-            <Button>
-              <Link to="/search" component={TouchableOpacity}>
-                <Icon name="search" />
-              </Link>
-            </Button>
+            <Link to={"/"} component={button}>
+              <Icon name="home" />
+            </Link>
+
+            <Link to="/search" component={button}>
+              <Icon name="search" />
+            </Link>
           </FooterTab>
         </Footer>
       </Container>
